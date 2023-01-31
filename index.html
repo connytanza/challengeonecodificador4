@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Constanza Janeth Velasco / ONE-Grupo 4 / Challenge "Encriptador de texto"-->
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css"/><link rel="stylesheet" href="./css/reset.css"/>
+    <title>Encriptador de Texto</title><link rel="icon" type="image/png" href="./imagenes/icono.png"/>
+  </head>
+  <body>
+    <main class="contenedor">
+      <section class="contenedor-izquierdo">
+        <div class="contenedor-logo">
+          <img class="logo-imagen" src="./imagenes/logo.png"/>  
+          <p class="logo-titulo">3ncr1pt4d0r d3 T3xt0</p>
+        </div>
+        <div class="contenedor-mensaje">
+          <textarea class="texto-desencriptar" id="texto-desencriptar" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="contenedor-texto">
+          <p class="alerta">
+            Instrucciones: Ingresar solo letras minúsculas, sin carácteres especiales y sin acentos
+          </p>
+          <p class="alerta-error">
+            No se han cumplido las reglas, se ha ingresado letras mayusculas, caracteres especiales, acentos o no esta ingresando ningun dato
+          </p>
+        </div>
+        <div class="contenedor-botones">
+          <button id="encriptar" class="encriptar">Encriptar</button>
+          <button id="desencriptar" class="desencriptar">Desencriptar</button>
+          <button id="pegar" class="pegar">Pegar</button>
+          <button id="limpiar" class="limpiar">Borrar</button>
+        </div>
+      </section>
+      <section class="contenedor-derecho">
+          <div class="contenedor-imagen">
+            <img class="imagen" src="./imagenes/encriptado.png"/> 
+          </div>
+          <div class="contenedor-texto-encriptado">
+            <p class="resultado">No se detecto texto para ser encriptado, ingrese el texto que desee encriptar o desencriptar</p>
+            <textarea readonly class="texto-resultado"></textarea>
+          </div>
+          <div>
+            <button id="copiar" class="copiar">Copiar</button>
+          </div>
+      </section>
+    </main>
+    <script src="./javaScript/principal.js"></script>
+  </body>
+</html>
